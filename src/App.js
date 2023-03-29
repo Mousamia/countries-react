@@ -6,7 +6,7 @@ import Cosmetics from './components/Cosmetics/Cosmetics';
 function App() {
   return (
     <div className="App">
-     <h1>Kichu ekta</h1>
+     <h1>Welocme to my Product</h1>
      <Cosmetics></Cosmetics>
     </div>
   );

@@ -1,0 +1,5 @@
+ {id: 1, name: 'Alta', price: 100},
+        {id: 2, name: 'Malta', price: 200},
+        {id: 3, name: 'Chalta', price: 300},
+        {id: 4, name: 'Falta', price: 400},
+        {id: 5, name: 'Lalta', price: 500},
