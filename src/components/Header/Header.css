@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2{
+    padding-left: 30px;
+    
+}
+
+.navbar img{
+    padding-right: 30px;
+}
