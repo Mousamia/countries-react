@@ -3,12 +3,23 @@ import './Shop.css'
 import Products from '../Products/Product';
 const Shop = () => {
     const [products, setProduts] = useState([]);
+    const [cart, setCart] = useState([]);
 
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
             .then(data => setProduts(data));
     }, []);
+    console.log(cart);
+
+    const addProductBtn = (product) =>{
+
+        let newCart = [...cart, product];
+        console.log(newCart);
+        setCart(newCart);
+        console.log(cart.length);
+        
+    }
 
     return (
         <div className='shop-container'>
@@ -17,7 +28,9 @@ const Shop = () => {
                     products.map(product => <Products
                         key={product.id}
                         product={product}
-                        name={"biyebari"} >
+                        name={"biyebari"}
+                        addProductBtn = {addProductBtn}
+                         >
 
                     </Products>)
                 }
